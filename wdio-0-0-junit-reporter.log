@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="First Steps with WebdriverIO" timestamp="2023-06-19T19:59:22" time="0.02" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="First Steps with WebdriverIO"/>
+      <property name="capabilities" value="chrome.114_0_5735_106.macosx"/>
+      <property name="file" value="file://./test/specs/example.js"/>
+    </properties>
+    <testcase classname="chrome.114_0_5735_106.macosx.First_Steps_with_WebdriverIO" name="Load BStack Demo Website" time="0.005">
+      <system-out><![CDATA[
+COMMAND: GET /session/adb95d79422dfe4f91d3f07ec1a5a7dd/url - {}
+COMMAND: POST /session/adb95d79422dfe4f91d3f07ec1a5a7dd/url - {"url":"https://www.bstackdemo.com/"}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.114_0_5735_106.macosx.First_Steps_with_WebdriverIO" name="Load WebdriverIO Website" time="0.001">
+      <system-out><![CDATA[
+COMMAND: POST /session/adb95d79422dfe4f91d3f07ec1a5a7dd/url - {"url":"https://webdriver.io/"}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+  <testsuite name="Second Steps with WebdriverIO" timestamp="2023-06-19T19:59:22" time="0.01" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Second Steps with WebdriverIO"/>
+      <property name="capabilities" value="chrome.114_0_5735_106.macosx"/>
+      <property name="file" value="file://./test/specs/example.js"/>
+    </properties>
+    <testcase classname="chrome.114_0_5735_106.macosx.Second_Steps_with_WebdriverIO" name="Second load BStack Demo Website" time="0.003">
+      <system-out><![CDATA[
+COMMAND: GET /session/adb95d79422dfe4f91d3f07ec1a5a7dd/title - {}
+COMMAND: POST /session/adb95d79422dfe4f91d3f07ec1a5a7dd/url - {"url":"https://www.bstackdemo.com/"}
+COMMAND: DELETE /session/adb95d79422dfe4f91d3f07ec1a5a7dd - {}
+COMMAND: GET /session/adb95d79422dfe4f91d3f07ec1a5a7dd/url - {}
+RESULT: {"url":"https://www.bstackdemo.com/"}
+RESULT: {"url":"https://webdriver.io/"}
+RESULT: {}
+RESULT: {"url":"https://www.bstackdemo.com/"}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
